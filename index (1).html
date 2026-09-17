@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>♡⃝ Ayuu Horror ♡⃝</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#050507;color:#fff;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 15%,#40101555,transparent 35%),linear-gradient(#0008,#050507);pointer-events:none}
+nav{position:sticky;top:0;z-index:5;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;background:#050507dd;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff15}
+.logo{font-family:"Cinzel Decorative",serif;font-size:22px;font-weight:700;letter-spacing:1px}
+nav a{color:#ddd;text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:#ff4455}
+.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;position:relative}
+.hero .box{max-width:850px}
+.badge{display:inline-block;border:1px solid #ff334455;background:#ff20320d;padding:8px 15px;border-radius:999px;color:#ff7d88;font-size:12px;letter-spacing:2px}
+h1{font-family:"Cinzel Decorative",serif;font-size:clamp(48px,12vw,100px);margin:20px 0 12px;line-height:.9;text-shadow:0 0 35px #ff173055}
+h1 span{color:#ff334d}
+.hero p{color:#aaa;max-width:600px;margin:auto;line-height:1.7}
+.buttons{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid #ffffff18;color:#fff;background:#ffffff0b}
+.btn.primary{background:#e51f38;border-color:#e51f38}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+section{padding:65px 7%;max-width:1200px;margin:auto}
+.title{text-align:center;font-size:30px;margin-bottom:10px}
+.sub{text-align:center;color:#888;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#0d0d11;border:1px solid #ffffff12;border-radius:18px;padding:25px;box-shadow:0 12px 35px #0008}
+.icon{font-size:30px;margin-bottom:15px}.card h3{margin-bottom:9px}.card p{color:#92929a;line-height:1.55;font-size:14px}
+.card .btn{display:inline-block;margin-top:18px;font-size:13px}
+footer{text-align:center;padding:35px;color:#666;border-top:1px solid #ffffff10}
+@media(max-width:600px){nav{padding:14px 5%}nav a{margin-left:8px;font-size:12px}.hero{min-height:65vh}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">♡⃝ Ayuu Horror ♡⃝</div>
+  <div>
+    <a href="#home">Home</a><a href="#downloads">Downloads</a><a href="#keys">Keys</a><a href="#register">Register</a>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+ <div class="box">
+  <div class="badge">HORROR TEAM • OFFICIAL HUB</div>
+  <h1>Ayuu <span>Horror</span></h1>
+  <p>Welcome to the official Ayuu Horror team hub. Get the latest files, community access and registration information in one place.</p>
+  <div class="buttons">
+   <a class="btn primary" href="#downloads">⬇ Downloads</a>
+   <a class="btn" href="#keys">🔑 Get Key</a>
+   <a class="btn" href="#register">👤 Register</a>
+   <a class="btn" href="https://discord.com/" target="_blank">💬 Discord</a>
+  </div>
+ </div>
+</section>
+
+<section id="downloads">
+ <h2 class="title">⬇ Downloads</h2><p class="sub">Official team files and releases</p>
+ <div class="grid">
+  <div class="card"><div class="icon">📦</div><h3>Latest Release</h3><p>Put your latest APK, ZIP or other downloadable file here.</p><a class="btn primary" href="YOUR_DOWNLOAD_LINK" target="_blank">Download</a></div>
+  <div class="card"><div class="icon">📝</div><h3>Changelog</h3><p>Show version information and what's new in each release.</p><a class="btn" href="#">View Updates</a></div>
+  <div class="card"><div class="icon">🛠️</div><h3>Support</h3><p>Need help? Join the Discord community for support and announcements.</p><a class="btn" href="https://discord.com/" target="_blank">Join Discord</a></div>
+ </div>
+</section>
+
+<section id="keys">
+ <h2 class="title">🔑 Key Center</h2><p class="sub">Manage your access key</p>
+ <div class="grid">
+  <div class="card"><div class="icon">🔐</div><h3>Get a Key</h3><p>Connect this button to your real key-generation or verification service.</p><a class="btn primary" href="YOUR_KEY_LINK">Get Key</a></div>
+  <div class="card"><div class="icon">✅</div><h3>Verify Key</h3><p>Open your verification page to check whether a key is valid.</p><a class="btn" href="YOUR_VERIFY_LINK">Verify</a></div>
+ </div>
+</section>
+
+<section id="register">
+ <h2 class="title">👤 Register</h2><p class="sub">Create your Ayuu Horror account</p>
+ <div class="grid">
+  <div class="card">
+   <h3>Registration</h3><p>Connect this form to your own backend later. This demo does not store passwords or personal data.</p>
+   <form onsubmit="demoRegister(event)">
+    <input required placeholder="Username" style="width:100%;margin-top:18px;padding:13px;border-radius:10px;border:1px solid #ffffff18;background:#050507;color:#fff">
+    <input required type="email" placeholder="Email" style="width:100%;margin-top:10px;padding:13px;border-radius:10px;border:1px solid #ffffff18;background:#050507;color:#fff">
+    <button class="btn primary" style="margin-top:12px;cursor:pointer">Register</button>
+   </form>
+   <p id="msg" style="margin-top:12px;color:#ff7d88"></p>
+  </div>
+ </div>
+</section>
+</main>
+<footer>© 2026 Ayuu Horror • Official Team Website</footer>
+<script>
+function demoRegister(e){
+ e.preventDefault();
+ document.getElementById("msg").textContent="Demo registration submitted. Connect your backend to make accounts permanent.";
+}
+</script>
+</body>
+</html>
